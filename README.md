@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -127,7 +126,7 @@
       justify-content: center;
       width: 100%;
     }
-    /* SVG flower with petal shapes */
+    /* SVG flower with petal shapes - NO SCALING ON HOVER */
     svg {
       width: 500px;
       height: 500px;
@@ -135,12 +134,11 @@
       margin: 10px 0;
     }
     .petal {
-      transition: transform 0.25s ease, filter 0.25s;
       cursor: pointer;
+      transition: fill 0.3s ease, filter 0.3s ease;
     }
     .petal:hover {
-      transform: scale(1.1);
-      filter: brightness(1.15) saturate(1.3);
+      filter: drop-shadow(0 0 12px #ff9a9a);
     }
     .center-circle {
       pointer-events: none; /* لا تمنع النقر على البتلات */
@@ -213,7 +211,7 @@
     </div>
   </section>
 
-  <!-- قسم الزهرة الجديدة (بتلات حقيقية) -->
+  <!-- قسم الزهرة الجديدة (بدون أي حركة عند hover) -->
   <section class="section-2" id="flower-section">
     <h2 class="flower-title">أنتِ كل هذه الأدوار</h2>
     <div class="flower-container">
@@ -242,18 +240,18 @@
           </radialGradient>
         </defs>
 
-        <!-- البتلة 1: حبيبتي (في الأعلى) -->
-        <path class="petal" data-role="حبيبتي" d="M200,100 Q240,140 200,200 Q160,140 200,100" fill="url(#grad1)" transform="rotate(0,200,200)" />
+        <!-- البتلة 1: حبيبتي (في الأعلى) - شكل دمعة/بتلة -->
+        <path class="petal" data-role="حبيبتي" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad1)" transform="rotate(0,200,200)" />
         <!-- البتلة 2: الأم (72 درجة) -->
-        <path class="petal" data-role="الأم" d="M200,100 Q240,140 200,200 Q160,140 200,100" fill="url(#grad2)" transform="rotate(72,200,200)" />
+        <path class="petal" data-role="الأم" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad2)" transform="rotate(72,200,200)" />
         <!-- البتلة 3: الأخت (144 درجة) -->
-        <path class="petal" data-role="الأخت" d="M200,100 Q240,140 200,200 Q160,140 200,100" fill="url(#grad3)" transform="rotate(144,200,200)" />
+        <path class="petal" data-role="الأخت" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad3)" transform="rotate(144,200,200)" />
         <!-- البتلة 4: الابنة (216 درجة) -->
-        <path class="petal" data-role="الابنة" d="M200,100 Q240,140 200,200 Q160,140 200,100" fill="url(#grad4)" transform="rotate(216,200,200)" />
+        <path class="petal" data-role="الابنة" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad4)" transform="rotate(216,200,200)" />
         <!-- البتلة 5: الصديقة (288 درجة) -->
-        <path class="petal" data-role="الصديقة" d="M200,100 Q240,140 200,200 Q160,140 200,100" fill="url(#grad5)" transform="rotate(288,200,200)" />
+        <path class="petal" data-role="الصديقة" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad5)" transform="rotate(288,200,200)" />
 
-        <!-- مركز الزهرة (قلب صغير) غير قابل للنقر -->
+        <!-- مركز الزهرة (قلب) غير قابل للنقر -->
         <circle class="center-circle" cx="200" cy="200" r="40" fill="#ffe8e8" stroke="#fbb5b5" stroke-width="3" />
         <text class="center-circle" x="200" y="215" text-anchor="middle" fill="#a15454" font-size="26" font-family="Cairo">❤️</text>
       </svg>
