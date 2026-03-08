@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>لحبيبتي • 8 مارس</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts for elegant Arabic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -27,6 +27,8 @@
       0% { background: linear-gradient(145deg, #fff2f0, #ffe0d9); }
       100% { background: linear-gradient(145deg, #ffe0e5, #ffd9e0); }
     }
+
+    /* floating emoji background */
     .floating-icons {
       position: fixed;
       top: 0;
@@ -37,12 +39,12 @@
       z-index: 1;
       overflow: hidden;
     }
-    .floating-icons i {
+    .floating-icons span {
       position: absolute;
-      color: rgba(255, 180, 180, 0.5);
       font-size: 2rem;
       animation: float 14s infinite ease-in-out;
       filter: drop-shadow(0 5px 8px #ffc0c0);
+      pointer-events: none;
     }
     @keyframes float {
       0% { transform: translateY(110vh) rotate(0deg) scale(0.8); opacity: 0; }
@@ -50,6 +52,8 @@
       80% { opacity: 0.6; }
       100% { transform: translateY(-20vh) rotate(20deg) scale(1.2); opacity: 0; }
     }
+
+    /* main sections */
     section {
       position: relative;
       z-index: 10;
@@ -113,6 +117,7 @@
       40% { transform: translateY(-20px); }
       60% { transform: translateY(-10px); }
     }
+
     /* flower section */
     .flower-title {
       font-size: 3rem;
@@ -127,7 +132,6 @@
       justify-content: center;
       width: 100%;
     }
-    /* SVG flower with petal shapes - NO SCALING ON HOVER */
     svg {
       width: 500px;
       height: 500px;
@@ -136,13 +140,13 @@
     }
     .petal {
       cursor: pointer;
-      transition: fill 0.3s ease, filter 0.3s ease;
+      transition: filter 0.3s ease;
     }
     .petal:hover {
       filter: drop-shadow(0 0 12px #ff9a9a);
     }
     .center-circle {
-      pointer-events: none; /* لا تمنع النقر على البتلات */
+      pointer-events: none;
     }
     .role-message {
       font-size: 2.5rem;
@@ -168,6 +172,7 @@
       font-size: 2rem;
       color: #ffb6c1;
     }
+
     @media (max-width: 600px) {
       h1 { font-size: 2.5rem; }
       .message { font-size: 1.3rem; }
@@ -177,28 +182,30 @@
   </style>
 </head>
 <body>
+  <!-- Floating emojis: hearts, butterflies, bunnies -->
   <div class="floating-icons">
-  <!-- Hearts (always work) -->
-  <i class="fas fa-heart" style="top: 10%; left: 5%; animation-delay: 0s;"></i>
-  <i class="fas fa-heart" style="top: 70%; left: 85%; animation-delay: 3s;"></i>
-  <i class="fas fa-heart" style="top: 30%; left: 40%; animation-delay: 5s;"></i>
+    <!-- hearts -->
+    <span style="top: 10%; left: 5%; animation-delay: 0s;">❤️</span>
+    <span style="top: 70%; left: 85%; animation-delay: 3s;">💖</span>
+    <span style="top: 30%; left: 40%; animation-delay: 5s;">💕</span>
+    <span style="top: 50%; left: 15%; animation-delay: 1.5s;">❤️‍🔥</span>
+    <!-- butterflies -->
+    <span style="top: 20%; left: 80%; animation-delay: 1s;">🦋</span>
+    <span style="top: 85%; left: 15%; animation-delay: 5s;">🦋</span>
+    <span style="top: 45%; left: 70%; animation-delay: 2.8s;">🦋</span>
+    <!-- bunnies -->
+    <span style="top: 40%; left: 20%; animation-delay: 2s;">🐇</span>
+    <span style="top: 55%; left: 70%; animation-delay: 4s;">🐰</span>
+    <span style="top: 75%; left: 45%; animation-delay: 6s;">🐇</span>
+  </div>
 
-  <!-- Butterflies (FA6) – if still broken, replace with fa-feather -->
-  <i class="fas fa-butterfly" style="top: 20%; left: 80%; animation-delay: 1s;"></i>
-  <i class="fas fa-butterfly" style="top: 85%; left: 15%; animation-delay: 5s;"></i>
-
-  <!-- Bunnies (FA6) – if broken, use fa-paw or remove -->
-  <i class="fas fa-rabbit" style="top: 40%; left: 20%; animation-delay: 2s;"></i>
-  <i class="fas fa-rabbit" style="top: 55%; left: 70%; animation-delay: 4s;"></i>
-</div>
-
-  <!-- الصفحة الرئيسية -->
+  <!-- SECTION 1: HOMEPAGE CONGRATULATIONS -->
   <section class="section-1" id="home">
     <div class="content-box">
       <div class="deco-line">
-        <i class="fas fa-heart"></i> <i class="fas fa-butterfly"></i> <i class="fas fa-rabbit"></i> <i class="fas fa-flower"></i>
+        ❤️ 🦋 🐇
       </div>
-      <h1>الثامن من مارس</h1>
+      <h1>يوم المرأة العالمي</h1>
       <div class="subtitle">إلى حبيبتي</div>
       <div class="message">
         <i class="fas fa-quote-right"></i> 
@@ -206,22 +213,20 @@
         <i class="fas fa-quote-left"></i>
       </div>
       <div style="font-size: 2rem; margin: 1rem;">
-        <i class="fas fa-heart" style="color: #f38989;"></i>
-        <i class="fas fa-heart" style="color: #f7a1a1;"></i>
-        <i class="fas fa-heart" style="color: #fbb6b6;"></i>
+        ❤️ 💖 💕
       </div>
       <div class="arrow-down" onclick="document.getElementById('flower-section').scrollIntoView({behavior: 'smooth'})">
-        <i class="fas fa-chevron-circle-down"></i>
+        ⬇️
       </div>
     </div>
   </section>
 
-  <!-- قسم الزهرة الجديدة (بدون أي حركة عند hover) -->
+  <!-- SECTION 2: FLOWER WITH ROLES -->
   <section class="section-2" id="flower-section">
-    <h2 class="flower-title">أنتِ غنى عن كل الناس</h2>
+    <h2 class="flower-title">أنتِ كل هذه الأدوار</h2>
     <div class="flower-container">
       <svg viewBox="0 0 400 400">
-        <!-- تعريف التدرجات اللونية للبتلات -->
+        <!-- gradients for petals -->
         <defs>
           <radialGradient id="grad1" cx="30%" cy="30%" r="70%">
             <stop offset="0%" stop-color="#fbc1c1" />
@@ -245,18 +250,14 @@
           </radialGradient>
         </defs>
 
-        <!-- البتلة 1: حبيبتي (في الأعلى) - شكل دمعة/بتلة -->
+        <!-- petals (teardrop shape) -->
         <path class="petal" data-role="حبيبتي" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad1)" transform="rotate(0,200,200)" />
-        <!-- البتلة 2: الأم (72 درجة) -->
         <path class="petal" data-role="الأم" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad2)" transform="rotate(72,200,200)" />
-        <!-- البتلة 3: الأخت (144 درجة) -->
         <path class="petal" data-role="الأخت" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad3)" transform="rotate(144,200,200)" />
-        <!-- البتلة 4: الابنة (216 درجة) -->
         <path class="petal" data-role="الابنة" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad4)" transform="rotate(216,200,200)" />
-        <!-- البتلة 5: الصديقة (288 درجة) -->
         <path class="petal" data-role="الصديقة" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad5)" transform="rotate(288,200,200)" />
 
-        <!-- مركز الزهرة (قلب) غير قابل للنقر -->
+        <!-- center (non‑clickable) -->
         <circle class="center-circle" cx="200" cy="200" r="40" fill="#ffe8e8" stroke="#fbb5b5" stroke-width="3" />
         <text class="center-circle" x="200" y="215" text-anchor="middle" fill="#a15454" font-size="26" font-family="Cairo">❤️</text>
       </svg>
@@ -264,7 +265,7 @@
       <div class="role-message" id="roleDisplay">🌸 إضغط على بتلة 🌸</div>
     </div>
     <div style="margin-top: 30px; color: #b47373; font-size: 1.8rem;">
-      <i class="fas fa-butterfly"></i>   <i class="fas fa-heart"></i>   <i class="fas fa-rabbit"></i>
+      🦋 ❤️ 🐇
     </div>
   </section>
 
@@ -280,11 +281,5 @@
       });
     });
   </script>
-
-  <style>
-    /* أيقونات إضافية */
-    .fa-rabbit:before { content: "\f807"; }
-    .fa-butterfly:before { content: "\e800"; }
-  </style>
 </body>
 </html>
