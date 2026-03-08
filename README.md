@@ -213,7 +213,7 @@
 
   <!-- قسم الزهرة الجديدة (بدون أي حركة عند hover) -->
   <section class="section-2" id="flower-section">
-    <h2 class="flower-title">أنتِ كل هذه الأدوار</h2>
+    <h2 class="flower-title">أنتِ غنى عن كل الناس</h2>
     <div class="flower-container">
       <svg viewBox="0 0 400 400">
         <!-- تعريف التدرجات اللونية للبتلات -->
