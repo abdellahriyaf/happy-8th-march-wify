@@ -223,7 +223,7 @@
 
   <!-- SECTION 2: FLOWER WITH ROLES -->
   <section class="section-2" id="flower-section">
-    <h2 class="flower-title">أنتِ كل هذه الأدوار</h2>
+    <h2 class="flower-title">أنتِ غني عن كل الناس </h2>
     <div class="flower-container">
       <svg viewBox="0 0 400 400">
         <!-- gradients for petals -->
@@ -251,7 +251,7 @@
         </defs>
 
         <!-- petals (teardrop shape) -->
-        <path class="petal" data-role="حبيبتي" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad1)" transform="rotate(0,200,200)" />
+        <path class="petal" data-role="زوجة" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad1)" transform="rotate(0,200,200)" />
         <path class="petal" data-role="الأم" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad2)" transform="rotate(72,200,200)" />
         <path class="petal" data-role="الأخت" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad3)" transform="rotate(144,200,200)" />
         <path class="petal" data-role="الابنة" d="M200,80 Q240,130 200,200 Q160,130 200,80" fill="url(#grad4)" transform="rotate(216,200,200)" />
