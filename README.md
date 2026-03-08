@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>لحبيبتي الغالية • 8 مارس</title>
-  <!-- Font Awesome for cute icons & elegant Arabic font -->
+  <title>لحبيبتي • 8 مارس</title>
+  <!-- Font Awesome for icons & elegant Arabic fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,24 +43,18 @@
       overflow: hidden;
     }
 
-    .floating-icons i, .floating-icons .fa-icon {
+    .floating-icons i {
       position: absolute;
-      color: rgba(255, 200, 210, 0.5);
-      font-size: 1.8rem;
-      animation: float 12s infinite ease-in-out;
-      filter: drop-shadow(0 5px 5px rgba(255, 180, 180, 0.2));
-    }
-
-    /* specific for wife: bunnies (use rabbit icon) */
-    .wife-bunny {
-      color: #f9cdcd !important;
-      opacity: 0.7;
+      color: rgba(255, 180, 180, 0.5);
+      font-size: 2rem;
+      animation: float 14s infinite ease-in-out;
+      filter: drop-shadow(0 5px 8px #ffc0c0);
     }
 
     @keyframes float {
-      0% { transform: translateY(100vh) rotate(0deg) scale(0.8); opacity: 0; }
-      20% { opacity: 0.7; }
-      80% { opacity: 0.5; }
+      0% { transform: translateY(110vh) rotate(0deg) scale(0.8); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.6; }
       100% { transform: translateY(-20vh) rotate(20deg) scale(1.2); opacity: 0; }
     }
 
@@ -75,14 +70,6 @@
       justify-content: center;
       padding: 2rem 1rem;
       scroll-behavior: smooth;
-    }
-
-    .section-1 {
-      background: transparent;
-    }
-
-    .section-2 {
-      background: transparent;
     }
 
     .content-box {
@@ -149,7 +136,7 @@
     .flower-title {
       font-size: 3rem;
       color: #8f5e5e;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       text-shadow: 2px 2px 0 #ffd8d8;
     }
 
@@ -161,26 +148,26 @@
       width: 100%;
     }
 
+    /* improved SVG flower */
     svg {
-      width: 450px;
-      height: 450px;
-      filter: drop-shadow(0 10px 15px #ffbfbf);
-      margin: 20px 0;
-      cursor: pointer;
+      width: 480px;
+      height: 480px;
+      filter: drop-shadow(0 12px 20px #ffb3b3);
+      margin: 10px 0;
     }
 
     .petal {
-      transition: transform 0.2s, filter 0.3s;
+      transition: transform 0.2s, filter 0.2s;
       cursor: pointer;
     }
 
     .petal:hover {
       transform: scale(1.08);
-      filter: brightness(1.1);
+      filter: brightness(1.1) saturate(1.3);
     }
 
     .center-circle {
-      transition: 0.2s;
+      pointer-events: none; /* so clicks pass through to petals */
     }
 
     .role-message {
@@ -191,7 +178,7 @@
       backdrop-filter: blur(10px);
       padding: 1.5rem 3rem;
       border-radius: 100px;
-      margin-top: 20px;
+      margin-top: 30px;
       min-height: 120px;
       display: flex;
       align-items: center;
@@ -203,7 +190,6 @@
       max-width: 90%;
     }
 
-    /* small decorations inline */
     .deco-line {
       margin: 1rem 0;
       font-size: 2rem;
@@ -214,38 +200,37 @@
     @media (max-width: 600px) {
       h1 { font-size: 2.5rem; }
       .message { font-size: 1.3rem; }
-      svg { width: 320px; height: 320px; }
+      svg { width: 350px; height: 350px; }
       .role-message { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
-  <!-- floating background icons (wife version: includes bunny) -->
+  <!-- floating background icons (wife version: includes bunny/rabbit) -->
   <div class="floating-icons">
-    <i class="fas fa-heart" style="top: 10%; left: 5%; animation-delay: 0s; font-size: 2rem;"></i>
-    <i class="fas fa-heart" style="top: 70%; left: 85%; animation-delay: 3s; font-size: 2.4rem;"></i>
-    <i class="fas fa-butterfly" style="top: 20%; left: 80%; animation-delay: 1s; font-size: 2.2rem; color: #fbb8c6;"></i>
-    <i class="fas fa-butterfly" style="top: 85%; left: 15%; animation-delay: 5s; font-size: 2.5rem;"></i>
-    <i class="fas fa-bunny" style="top: 40%; left: 20%; animation-delay: 2s; font-size: 2.8rem;" class="wife-bunny"></i>
-    <i class="fas fa-bunny" style="top: 55%; left: 70%; animation-delay: 4s; font-size: 2.3rem;" class="wife-bunny"></i>
-    <i class="fas fa-seedling" style="top: 15%; left: 45%; animation-delay: 2.5s; font-size: 2rem; color: #d4a2a2;"></i>
-    <i class="fas fa-feather" style="top: 75%; left: 40%; animation-delay: 3.5s; font-size: 2.6rem; transform: rotate(20deg);"></i>
-    <!-- extra hearts -->
-    <i class="fas fa-heart" style="top: 30%; left: 30%; animation-delay: 1.2s; font-size: 1.8rem; color: #fbaaaa;"></i>
-    <i class="fas fa-heart" style="top: 90%; left: 60%; animation-delay: 6s; font-size: 3rem; color: #fac0c0;"></i>
+    <i class="fas fa-heart" style="top: 10%; left: 5%; animation-delay: 0s;"></i>
+    <i class="fas fa-heart" style="top: 70%; left: 85%; animation-delay: 3s;"></i>
+    <i class="fas fa-butterfly" style="top: 20%; left: 80%; animation-delay: 1s; color: #fbb8c6;"></i>
+    <i class="fas fa-butterfly" style="top: 85%; left: 15%; animation-delay: 5s;"></i>
+    <i class="fas fa-rabbit" style="top: 40%; left: 20%; animation-delay: 2s; color: #f9cdcd;"></i>
+    <i class="fas fa-rabbit" style="top: 55%; left: 70%; animation-delay: 4s; color: #f9cdcd;"></i>
+    <i class="fas fa-feather" style="top: 15%; left: 45%; animation-delay: 2.5s;"></i>
+    <i class="fas fa-feather" style="top: 75%; left: 40%; animation-delay: 3.5s;"></i>
+    <i class="fas fa-heart" style="top: 30%; left: 30%; animation-delay: 1.2s;"></i>
+    <i class="fas fa-heart" style="top: 90%; left: 60%; animation-delay: 6s;"></i>
   </div>
 
-  <!-- SECTION 1: HOMEPAGE CONGRATULATIONS -->
+  <!-- SECTION 1: HOMEPAGE CONGRATULATIONS (updated to habibati) -->
   <section class="section-1" id="home">
     <div class="content-box">
       <div class="deco-line">
-        <i class="fas fa-heart"></i> <i class="fas fa-butterfly"></i> <i class="fas fa-bunny"></i> <i class="fas fa-flower"></i>
+        <i class="fas fa-heart"></i> <i class="fas fa-butterfly"></i> <i class="fas fa-rabbit"></i> <i class="fas fa-flower"></i>
       </div>
-      <h1>الثامن من مارس </h1>
-      <div class="subtitle">إلى ملكتي</div>
+      <h1>يوم المرأة العالمي</h1>
+      <div class="subtitle">إلى حبيبتي</div>  <!-- changed from ملكتي to حبيبتي, but keeping queen optional; you can revert if you like -->
       <div class="message">
         <i class="fas fa-quote-right"></i> 
-        حبيبتي .. أنتِ العالم كله، وأنتِ كل شيء. فيكِ وجدت الزوجة، الحبيبة، الأم، الأخت، والابنة. بكِ يكتمل قلبي وترتاح روحي. كل عام وأنتِ نور حياتي.
+        حبيبتي .. أنتِ العالم كله، وأنتِ كل شيء. فيكِ وجدت الحبيبة، الأم، الأخت، والابنة. بكِ يكتمل قلبي وترتاح روحي. كل عام وأنتِ نور حياتي.
         <i class="fas fa-quote-left"></i>
       </div>
       <div style="font-size: 2rem; margin: 1rem;">
@@ -259,38 +244,63 @@
     </div>
   </section>
 
-  <!-- SECTION 2: FLOWER WITH ROLES (wife version) -->
+  <!-- SECTION 2: IMPROVED FLOWER WITH ROLES (habibati version) -->
   <section class="section-2" id="flower-section">
-    <h2 class="flower-title">أنتِ غنى عن كل الناس </h2>
+    <h2 class="flower-title">أنتِ كل هذه الأدوار</h2>
     <div class="flower-container">
-      <!-- SVG flower with 5 petals + center, each clickable -->
+      <!-- SVG flower with 5 petals + non-clickable center -->
       <svg viewBox="0 0 400 400" id="flowerSvg">
-        <!-- petals (5) around center -->
-        <!-- petal 1 (wife) -->
-        <circle class="petal" data-role="الزوجة" cx="200" cy="200" r="50" fill="#FBC1C1" transform="rotate(0,200,200) translate(0,-110)" opacity="0.9" />
+        <!-- define gradients for petals -->
+        <defs>
+          <radialGradient id="petalGrad1" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#fbc1c1" />
+            <stop offset="100%" stop-color="#f7a1a1" />
+          </radialGradient>
+          <radialGradient id="petalGrad2" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#fad2d2" />
+            <stop offset="100%" stop-color="#f5a9a9" />
+          </radialGradient>
+          <radialGradient id="petalGrad3" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#f8c8c8" />
+            <stop offset="100%" stop-color="#f09d9d" />
+          </radialGradient>
+          <radialGradient id="petalGrad4" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#f9bdbd" />
+            <stop offset="100%" stop-color="#e99090" />
+          </radialGradient>
+          <radialGradient id="petalGrad5" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#f9afaf" />
+            <stop offset="100%" stop-color="#e68383" />
+          </radialGradient>
+        </defs>
+
+        <!-- petals placed in a circle with larger radius to reduce overlap and distinct click areas -->
+        <!-- petal 1 (habibati) changed from wife to حبيبتي -->
+        <circle class="petal" data-role="حبيبتي" cx="200" cy="200" r="55" fill="url(#petalGrad1)" transform="rotate(0,200,200) translate(0,-130)" opacity="0.95" />
         <!-- petal 2 -->
-        <circle class="petal" data-role="الحبيبة" cx="200" cy="200" r="50" fill="#FAD2D2" transform="rotate(72,200,200) translate(0,-110)" opacity="0.9" />
+        <circle class="petal" data-role="الأم" cx="200" cy="200" r="55" fill="url(#petalGrad2)" transform="rotate(72,200,200) translate(0,-130)" opacity="0.95" />
         <!-- petal 3 -->
-        <circle class="petal" data-role="الأم" cx="200" cy="200" r="50" fill="#F8C8C8" transform="rotate(144,200,200) translate(0,-110)" opacity="0.9" />
+        <circle class="petal" data-role="الأخت" cx="200" cy="200" r="55" fill="url(#petalGrad3)" transform="rotate(144,200,200) translate(0,-130)" opacity="0.95" />
         <!-- petal 4 -->
-        <circle class="petal" data-role="الأخت" cx="200" cy="200" r="50" fill="#F9BDBD" transform="rotate(216,200,200) translate(0,-110)" opacity="0.9" />
-        <!-- petal 5 -->
-        <circle class="petal" data-role="الابنة" cx="200" cy="200" r="50" fill="#F9AFAF" transform="rotate(288,200,200) translate(0,-110)" opacity="0.9" />
-        <!-- center circle -->
-        <circle class="center-circle" cx="200" cy="200" r="70" fill="#ffe1e1" stroke="#fbb5b5" stroke-width="4" />
-        <text x="200" y="220" text-anchor="middle" fill="#a15454" font-size="32" font-family="Cairo" dy=".3em">❤️</text>
+        <circle class="petal" data-role="الابنة" cx="200" cy="200" r="55" fill="url(#petalGrad4)" transform="rotate(216,200,200) translate(0,-130)" opacity="0.95" />
+        <!-- petal 5 - we still need 5 roles; we'll use "الحبيبة" but careful not duplicate; maybe use "الصديقة" or keep "الحبيبة" as second? Since we already have حبيبتي as primary, we can set the remaining to other roles: الحبيبة (the lover) is similar but we can use "الصديقة" (friend) or "الملكة" (queen). Let's use "الصديقة" to keep variety. -->
+        <circle class="petal" data-role="الصديقة" cx="200" cy="200" r="55" fill="url(#petalGrad5)" transform="rotate(288,200,200) translate(0,-130)" opacity="0.95" />
+
+        <!-- decorative center (stamen) - not clickable -->
+        <circle class="center-circle" cx="200" cy="200" r="60" fill="#ffe1e1" stroke="#fbb5b5" stroke-width="3" />
+        <circle class="center-circle" cx="200" cy="200" r="40" fill="#ffe8e8" />
+        <text class="center-circle" x="200" y="215" text-anchor="middle" fill="#a15454" font-size="30" font-family="Cairo" dy=".3em">❤️</text>
       </svg>
 
       <div class="role-message" id="roleDisplay">إضغط على بتلة</div>
     </div>
     <div style="margin-top: 30px; color: #b47373; font-size: 1.8rem;">
-      <i class="fas fa-butterfly"></i>   <i class="fas fa-heart"></i>   <i class="fas fa-bunny"></i>
+      <i class="fas fa-butterfly"></i>   <i class="fas fa-heart"></i>   <i class="fas fa-rabbit"></i>
     </div>
   </section>
 
   <script>
     (function() {
-      // wife roles
       const roleDisplay = document.getElementById('roleDisplay');
       const petals = document.querySelectorAll('.petal');
       
@@ -304,26 +314,18 @@
 
       petals.forEach(petal => {
         petal.addEventListener('click', showRole);
-        // also add a little hover effect via css already
       });
 
-      // optional: set default text
+      // set default message
       roleDisplay.textContent = '🌸 إضغط على بتلة 🌸';
     })();
   </script>
 
-  <!-- ensure floating icons are not overlapped by sections -->
+  <!-- ensure icons display correctly -->
   <style>
-    .section-1, .section-2 { position: relative; background: transparent; }
-    .floating-icons { z-index: 5; }
-    .content-box, .flower-container { position: relative; z-index: 20; }
-    .fa-bunny:before { content: "\f807"; }  /* using fontawesome rabbit if available, else fallback */
-    /* fallback: some icons might not have bunny exactly, but fontawesome 6 has "rabbit" */
-    .fa-bunny:before { content: "\f807"; } /* rabbit */
-    .fa-butterfly:before { content: "\e800"; } /* but we rely on existing */
+    .fa-rabbit:before { content: "\f807"; } /* FontAwesome 6 rabbit */
+    .fa-butterfly:before { content: "\e800"; } 
+    .fa-feather:before { content: "\f52d"; }
   </style>
-  <!-- fix: fontawesome 6 uses different names, but we can use "fa-bunny" as a class, but it's not official. Instead we'll use "fa-rabbit" and change -->
-  <!-- update floating icons to use correct Font Awesome names -->
-  <!-- we'll replace the classes in floating div manually -->
 </body>
 </html>
