@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>لزوجتي الحبيبة • 8 مارس</title>
+  <title>لحبيبتي الغالية • 8 مارس</title>
   <!-- Font Awesome for cute icons & elegant Arabic font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -241,11 +241,11 @@
       <div class="deco-line">
         <i class="fas fa-heart"></i> <i class="fas fa-butterfly"></i> <i class="fas fa-bunny"></i> <i class="fas fa-flower"></i>
       </div>
-      <h1>يوم المرأة العالمي</h1>
+      <h1>الثامن من مارس </h1>
       <div class="subtitle">إلى ملكتي</div>
       <div class="message">
         <i class="fas fa-quote-right"></i> 
-        زوجتي الحبيبة .. أنتِ العالم كله، وأنتِ كل شيء. فيكِ وجدت الزوجة، الحبيبة، الأم، الأخت، والابنة. بكِ يكتمل قلبي وترتاح روحي. كل عام وأنتِ نور حياتي.
+        حبيبتي .. أنتِ العالم كله، وأنتِ كل شيء. فيكِ وجدت الزوجة، الحبيبة، الأم، الأخت، والابنة. بكِ يكتمل قلبي وترتاح روحي. كل عام وأنتِ نور حياتي.
         <i class="fas fa-quote-left"></i>
       </div>
       <div style="font-size: 2rem; margin: 1rem;">
@@ -261,7 +261,7 @@
 
   <!-- SECTION 2: FLOWER WITH ROLES (wife version) -->
   <section class="section-2" id="flower-section">
-    <h2 class="flower-title">أنتِ كل هذه الأدوار</h2>
+    <h2 class="flower-title">أنتِ غنى عن كل الناس </h2>
     <div class="flower-container">
       <!-- SVG flower with 5 petals + center, each clickable -->
       <svg viewBox="0 0 400 400" id="flowerSvg">
