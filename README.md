@@ -178,15 +178,19 @@
 </head>
 <body>
   <div class="floating-icons">
-    <i class="fas fa-heart" style="top: 10%; left: 5%; animation-delay: 0s;"></i>
-    <i class="fas fa-heart" style="top: 70%; left: 85%; animation-delay: 3s;"></i>
-    <i class="fas fa-butterfly" style="top: 20%; left: 80%; animation-delay: 1s; color: #fbb8c6;"></i>
-    <i class="fas fa-butterfly" style="top: 85%; left: 15%; animation-delay: 5s;"></i>
-    <i class="fas fa-rabbit" style="top: 40%; left: 20%; animation-delay: 2s; color: #f9cdcd;"></i>
-    <i class="fas fa-rabbit" style="top: 55%; left: 70%; animation-delay: 4s; color: #f9cdcd;"></i>
-    <i class="fas fa-feather" style="top: 15%; left: 45%; animation-delay: 2.5s;"></i>
-    <i class="fas fa-feather" style="top: 75%; left: 40%; animation-delay: 3.5s;"></i>
-  </div>
+  <!-- Hearts (always work) -->
+  <i class="fas fa-heart" style="top: 10%; left: 5%; animation-delay: 0s;"></i>
+  <i class="fas fa-heart" style="top: 70%; left: 85%; animation-delay: 3s;"></i>
+  <i class="fas fa-heart" style="top: 30%; left: 40%; animation-delay: 5s;"></i>
+
+  <!-- Butterflies (FA6) – if still broken, replace with fa-feather -->
+  <i class="fas fa-butterfly" style="top: 20%; left: 80%; animation-delay: 1s;"></i>
+  <i class="fas fa-butterfly" style="top: 85%; left: 15%; animation-delay: 5s;"></i>
+
+  <!-- Bunnies (FA6) – if broken, use fa-paw or remove -->
+  <i class="fas fa-rabbit" style="top: 40%; left: 20%; animation-delay: 2s;"></i>
+  <i class="fas fa-rabbit" style="top: 55%; left: 70%; animation-delay: 4s;"></i>
+</div>
 
   <!-- الصفحة الرئيسية -->
   <section class="section-1" id="home">
