@@ -223,7 +223,7 @@
 
   <!-- SECTION 2: FLOWER WITH ROLES -->
   <section class="section-2" id="flower-section">
-    <h2 class="flower-title">أنتِ غني عن كل الناس </h2>
+    <h2 class="flower-title">أنتِ غنى عن كل الناس </h2>
     <div class="flower-container">
       <svg viewBox="0 0 400 400">
         <!-- gradients for petals -->
